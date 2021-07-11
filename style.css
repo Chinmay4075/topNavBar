@@ -1,0 +1,128 @@
+body{
+    margin: 0px;
+    background: #dae2ec;
+    font-family: "Open Sans", sans-serif;
+}
+
+nav{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    height: 40px;
+}
+
+.nav-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0.5rem;
+}
+
+.nav-toggle{
+    background: transparent;
+    border-color: transparent;
+    font-size: 1.5rem;
+    transition: all 0.3s linear;
+    color: #49a6e9;
+    cursor: pointer;
+}
+
+.links a{
+    margin: 0px;
+    padding: 0.5rem 0.5rem;
+    color: #324d67;
+    display: block;
+    text-transform: capitalize;
+    letter-spacing: 0.25rem;
+    transition: all 0.3s linear;
+}
+
+.links a:hover{
+    color: #49a6e9;
+    padding: 0.5rem 1rem;
+    margin: 0px;
+
+}
+.links li:hover{
+    background-color: #8bcbf9;
+}
+
+li{
+    list-style: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.social-icons {
+    display: none;
+}
+.social-icons a:hover{
+    color: #104e7a;
+    transition: all 0.3s linear;
+}
+
+.links {
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s linear;
+}
+.show-links {
+    height: 9rem;
+}
+
+.fab{
+    font-family: "Font Awesome 5 Brands";
+}
+
+
+@media screen and (min-width: 992px){
+    .nav-toggle{
+        display: none;
+    }
+    .nav-center{
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem;  
+    }
+    .links{
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .links a{
+        padding: 0.5rem 1rem ;
+        background: white;
+    }
+    
+    .social-icons{
+        display: flex;
+
+    }
+    .social-icons a{
+        display: inline-block;
+        color:#49a6e9;
+        margin: 0 0.25rem;
+    }
+    
+}
+
